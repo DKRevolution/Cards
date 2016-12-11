@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Mehfiline</title>
+<link href='//fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/global.css">
+<style type="text/css">	
+ .parent-container{
+	background-image:url('images/banner/banner7.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+</style>
+</head>
+<body>
+	<div ng-include="'templates/header.html'"></div>
+		<div ui-view></div>
+	<div ng-include="'templates/footer.html'"></div>
+	
+<script src="lib/jquery.min.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/angular-ui-router.min.js"></script>
+<script src="lib/bootstrap.min.js"></script> 
+<script src="controllers/app.js"></script>
+<script src="controllers/home-controller.js"></script>
+
+</body>
+</html>

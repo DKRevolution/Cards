@@ -1,0 +1,134 @@
+body {
+    font-family: 'Sofia';font-size: 22px;
+}
+
+ .discription-content h2{
+	padding:50px 100px;
+	text-align:center;
+	font-size:48px;
+	font-style:italic;
+	opacity:0.8;
+ }
+
+/*Header*/
+.glyphicon{color:#fff}
+.navbar-default {
+  background: #A86;
+  margin-bottom: 0;
+  border-left: none;
+  border-right: none;
+  position:fixed;
+  width:100%;
+  z-index:100;
+  height:60px;
+  }
+
+.navbar {
+  border-radius: 0; }
+.title-description{font-size:15px;}
+.navbar-brand {
+  font-size: 30px;
+  line-height: 32px;
+  color: #fff !important; }
+
+.link-css, .navbar-nav li a:focus, .navbar-nav li a:hover, .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
+  background: #767676 !important;
+  color: #fff !important; }
+  
+.middle-container{
+	margin:10% auto 10% auto;
+	padding:10px;
+}
+.middle-container h2{
+	color:#EF6;
+	text-align: center;
+}
+.card-container{
+		height:250px;
+		width:260px;
+		margin:5px;
+		font-family:sans-serif;
+		font-size:18px;
+}
+.middle-container > div{
+	border:1px solid #ccc; border-right:none;
+	padding:10px;
+	background: #fff;
+	margin:5px;
+}
+.card{
+		min-height:170px;}
+.card  img{
+		width:100%;
+}
+.card:after, .card:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.card:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+}
+.card:before {
+    content: attr(data-content);
+    color:#fff;
+    z-index:1;
+    top:0;
+    text-align:center; 
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+	padding:5px;
+	font-style:italic;
+}
+.card:hover:after, .card:hover:before {
+    opacity:1;
+}
+.card div{
+	margin:10px;
+}
+footer {
+  background: #767676;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+  margin-top: 0; }
+  footer ul li {
+    display: inline; }
+    footer ul li a {
+      border-right: 1px solid #ccc;
+      padding: 5px;
+      color: #fff; }
+  footer li:last-child a {
+    border-right: none; }
+
+ 
+
+.parent-container {
+  position: relative;
+  min-height: 630px;
+  clear: both; }
+
+
+
+.subpage-main-top-container {
+  min-height: 300px; }
+
+.subpage-main-bottom-container {
+  background: #46149A;
+  min-height: 300px; }
+
+.carousel-indicators {
+  bottom: 45px; }
+
+.room-rates {
+  margin-top: 60px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px; }
+  .room-rates ul {
+    border-right: none; }
+    .room-rates ul li {
+      min-height: 260px; }
