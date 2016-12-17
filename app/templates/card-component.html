@@ -1,0 +1,16 @@
+	<div class="parent-container">
+		<div class="container">			
+			<div class="middle-container row"> 
+			<h2>Delicious Foods From Different Countries Around The World</h2>
+				<div class="col-md-3 col-sm-6 col-xs-12 card-container" ng-repeat="item in food">
+					<div data-content="{{item.description}}" class="card">
+						<img src="images/food/{{item.image}}">
+					</div>
+					<span>{{item.name}}</span>					
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="discription-content">
+		<h2>We love to serve Foodies...!</h2>
+	</div>

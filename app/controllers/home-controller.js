@@ -1,49 +1,6 @@
-module.controller("homeCtrl", function($scope){
-
-  
- $scope.food = [
-	{
-		"name":"Serbian fish",
-		"description":"This is a fresh fish from the Danube river. Had this on a little floating restaurant in Belgrade. Easily the best meal in Serbia.",
-		"image":"serbian-food-fish.jpg",
-	},
-	{
-		"name":"‘Pho Ga’",
-		"description":"The Vietnamese ‘Pho Ga’, popular soup in the world.",
-		"image":"vietnamese-pho-ga.jpg",
-	},
-	{
-		"name":"Mexican huarache",
-		"description":"Mexican huarache. LOVE this thing",
-		"image":"mexico-huaraches.jpg",
-	},
-	{
-		"name":"Italian food - Pizza",
-		"description":"The BEST pizza I’ve had in my entire life. Apparently, Italy is a zillion levels above the rest of the world",
-		"image":"pizza-italy.jpg",
-	},
-	{
-		"name":"Montenegrin beef liver",
-		"description":"Organic grass-fed Montenegrin beef liver, one of the richest sources of B12. Comes with fresh tomato sauce. Beyond amazing.",
-		"image":"food-montenegro.jpg",
-	},
-	{
-		"name":"Nicaraguan beef heart",
-		"description":"Nicaraguan beef heart, a nutritious source of cholesterol and healthy saturated fats to boost testosterone levels.",
-		"image":"nicaraguan-food.jpg",
-	},
-	{
-		"name":"Burma",
-		"description":"Fell in love with those rich beefy soups of Burma. Rich in a variety of flavors from every angle.",
-		"image":"burmese-food1.jpg",
-	},
-	{
-		"name":"Snails in Butter",
-		"description":"Roasted SNAILS I had in an Alsacian village. They were so good I finished the whole thing in a minute.",
-		"image":"french-food-snails2.jpg",
-	}
-];
- 
-
-});
+module.controller("homeCtrl", [ '$scope', 'cardDataservice', function($scope, cardDataservice){
+	 cardDataservice.getCardData().then(function(resonse){
+	 	$scope.foodItems = resonse; 
+	 });
+}]);
   
